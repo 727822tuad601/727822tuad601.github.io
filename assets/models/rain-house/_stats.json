@@ -1,0 +1,26 @@
+{
+ "parts": 364,
+ "tris": 5480,
+ "faces": 3518,
+ "verts": 3468,
+ "dims": [
+  2230.0,
+  1835.0,
+  701.8
+ ],
+ "mats": [
+  "M_asphalt",
+  "M_bark",
+  "M_foliage",
+  "M_glass",
+  "M_grass",
+  "M_lamp",
+  "M_metal",
+  "M_paver",
+  "M_plaster",
+  "M_roof",
+  "M_wood"
+ ],
+ "emission": true,
+ "glb_mb": 11.81
+}

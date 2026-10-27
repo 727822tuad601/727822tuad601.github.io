@@ -1,0 +1,735 @@
+{
+ "sofa": {
+  "slug": "sofa",
+  "title": "Sofa",
+  "col": "Sofa",
+  "boxes": 12,
+  "tris": 144,
+  "faces": 72,
+  "verts": 96,
+  "dims": [
+   200.0,
+   90.0,
+   85.0
+  ],
+  "mats": [
+   "Sofa_Cushion",
+   "Sofa_Fabric",
+   "Sofa_Legs_Wood"
+  ],
+  "glb_mb": 2.09
+ },
+ "armchair": {
+  "slug": "armchair",
+  "title": "Armchair",
+  "col": "Armchair",
+  "boxes": 10,
+  "tris": 120,
+  "faces": 60,
+  "verts": 80,
+  "dims": [
+   80.0,
+   85.0,
+   85.0
+  ],
+  "mats": [
+   "Fabric_Cream",
+   "Fabric_Mustard",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 2.33
+ },
+ "pouf": {
+  "slug": "pouf",
+  "title": "Pouf",
+  "col": "Pouf",
+  "boxes": 6,
+  "tris": 72,
+  "faces": 36,
+  "verts": 48,
+  "dims": [
+   45.0,
+   45.0,
+   40.0
+  ],
+  "mats": [
+   "Leather_Brown",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 1.13
+ },
+ "coffee-table": {
+  "slug": "coffee-table",
+  "title": "Coffee Table",
+  "col": "CoffeeTable",
+  "boxes": 6,
+  "tris": 72,
+  "faces": 36,
+  "verts": 48,
+  "dims": [
+   110.0,
+   60.0,
+   45.0
+  ],
+  "mats": [
+   "Table_Legs_Black",
+   "Table_Wood_Top"
+  ],
+  "glb_mb": 0.44
+ },
+ "side-table": {
+  "slug": "side-table",
+  "title": "Side Table",
+  "col": "SideTable",
+  "boxes": 6,
+  "tris": 72,
+  "faces": 36,
+  "verts": 48,
+  "dims": [
+   45.0,
+   45.0,
+   50.0
+  ],
+  "mats": [
+   "Marble_White",
+   "Metal_Dark",
+   "Oak_Wood"
+  ],
+  "glb_mb": 0.61
+ },
+ "tv-console": {
+  "slug": "tv-console",
+  "title": "TV Console",
+  "col": "TV_Console",
+  "boxes": 15,
+  "tris": 180,
+  "faces": 90,
+  "verts": 120,
+  "dims": [
+   150.0,
+   44.0,
+   125.0
+  ],
+  "mats": [
+   "Metal_Dark",
+   "Oak_Wood",
+   "Plastic_Black",
+   "TV_Screen",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 0.87
+ },
+ "rug": {
+  "slug": "rug",
+  "title": "Rug",
+  "col": "Rug",
+  "boxes": 2,
+  "tris": 24,
+  "faces": 12,
+  "verts": 16,
+  "dims": [
+   200.0,
+   140.0,
+   1.6
+  ],
+  "mats": [
+   "Rug_Border",
+   "Rug_Main"
+  ],
+  "glb_mb": 1.49
+ },
+ "curtains": {
+  "slug": "curtains",
+  "title": "Curtains",
+  "col": "Curtains",
+  "boxes": 11,
+  "tris": 132,
+  "faces": 66,
+  "verts": 88,
+  "dims": [
+   220.0,
+   10.5,
+   234.0
+  ],
+  "mats": [
+   "Fabric_Curtain",
+   "Metal_Dark"
+  ],
+  "glb_mb": 1.03
+ },
+ "bookshelf": {
+  "slug": "bookshelf",
+  "title": "Bookshelf",
+  "col": "Bookshelf",
+  "boxes": 29,
+  "tris": 348,
+  "faces": 174,
+  "verts": 232,
+  "dims": [
+   80.0,
+   30.0,
+   180.0
+  ],
+  "mats": [
+   "Book_Color_1",
+   "Book_Color_2",
+   "Book_Color_3",
+   "Book_Color_4",
+   "Book_Color_5",
+   "Book_Color_6",
+   "Shelf_Back_Panel",
+   "Shelf_Wood"
+  ],
+  "glb_mb": 5.63
+ },
+ "floor-lamp": {
+  "slug": "floor-lamp",
+  "title": "Floor Lamp",
+  "col": "FloorLamp",
+  "boxes": 4,
+  "tris": 48,
+  "faces": 24,
+  "verts": 32,
+  "dims": [
+   36.0,
+   36.0,
+   162.0
+  ],
+  "mats": [
+   "Lamp_Metal_Black",
+   "Lamp_Shade_Warm"
+  ],
+  "glb_mb": 1.0
+ },
+ "table-lamp": {
+  "slug": "table-lamp",
+  "title": "Table Lamp",
+  "col": "TableLamp",
+  "boxes": 3,
+  "tris": 36,
+  "faces": 18,
+  "verts": 24,
+  "dims": [
+   24.0,
+   24.0,
+   35.0
+  ],
+  "mats": [
+   "Ceramic_White",
+   "Lamp_Shade_Warm"
+  ],
+  "glb_mb": 1.01
+ },
+ "plant-pot": {
+  "slug": "plant-pot",
+  "title": "Plant Pot",
+  "col": "PlantPot",
+  "boxes": 12,
+  "tris": 144,
+  "faces": 72,
+  "verts": 96,
+  "dims": [
+   29.0,
+   50.4,
+   83.3
+  ],
+  "mats": [
+   "Ceramic_White",
+   "Leaf_Green",
+   "Soil_Dark"
+  ],
+  "glb_mb": 1.14
+ },
+ "bed": {
+  "slug": "bed",
+  "title": "Bed",
+  "col": "Bed",
+  "boxes": 12,
+  "tris": 144,
+  "faces": 72,
+  "verts": 96,
+  "dims": [
+   164.0,
+   211.0,
+   101.0
+  ],
+  "mats": [
+   "Fabric_Bed_Linen",
+   "Fabric_Blanket_Teal",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 1.52
+ },
+ "nightstand": {
+  "slug": "nightstand",
+  "title": "Nightstand",
+  "col": "Nightstand_1",
+  "boxes": 9,
+  "tris": 108,
+  "faces": 54,
+  "verts": 72,
+  "dims": [
+   45.0,
+   45.0,
+   52.0
+  ],
+  "mats": [
+   "Metal_Brushed_Steel",
+   "Metal_Dark",
+   "Oak_Wood",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 0.75
+ },
+ "wardrobe": {
+  "slug": "wardrobe",
+  "title": "Wardrobe",
+  "col": "Wardrobe",
+  "boxes": 7,
+  "tris": 84,
+  "faces": 42,
+  "verts": 56,
+  "dims": [
+   122.0,
+   66.0,
+   200.0
+  ],
+  "mats": [
+   "Laminate_White",
+   "Metal_Dark",
+   "Oak_Wood",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 0.81
+ },
+ "desk": {
+  "slug": "desk",
+  "title": "Study Desk",
+  "col": "Desk",
+  "boxes": 12,
+  "tris": 144,
+  "faces": 72,
+  "verts": 96,
+  "dims": [
+   120.0,
+   60.2,
+   95.6
+  ],
+  "mats": [
+   "Laminate_White",
+   "Laptop_Screen",
+   "Metal_Brushed_Steel",
+   "Metal_Dark",
+   "Oak_Wood",
+   "Plastic_Black"
+  ],
+  "glb_mb": 0.74
+ },
+ "office-chair": {
+  "slug": "office-chair",
+  "title": "Office Chair",
+  "col": "OfficeChair",
+  "boxes": 12,
+  "tris": 144,
+  "faces": 72,
+  "verts": 96,
+  "dims": [
+   62.0,
+   62.0,
+   104.0
+  ],
+  "mats": [
+   "Fabric_Grey",
+   "Metal_Dark",
+   "Plastic_Black"
+  ],
+  "glb_mb": 1.15
+ },
+ "standing-mirror": {
+  "slug": "standing-mirror",
+  "title": "Standing Mirror",
+  "col": "StandingMirror",
+  "boxes": 4,
+  "tris": 48,
+  "faces": 24,
+  "verts": 32,
+  "dims": [
+   55.0,
+   30.0,
+   170.0
+  ],
+  "mats": [
+   "Mirror_Glass",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 0.29
+ },
+ "dining-table": {
+  "slug": "dining-table",
+  "title": "Dining Table",
+  "col": "DiningTable",
+  "boxes": 9,
+  "tris": 108,
+  "faces": 54,
+  "verts": 72,
+  "dims": [
+   160.0,
+   90.0,
+   75.0
+  ],
+  "mats": [
+   "Oak_Wood"
+  ],
+  "glb_mb": 0.33
+ },
+ "dining-chair": {
+  "slug": "dining-chair",
+  "title": "Dining Chair",
+  "col": "DiningChair_1",
+  "boxes": 10,
+  "tris": 120,
+  "faces": 60,
+  "verts": 80,
+  "dims": [
+   45.0,
+   45.0,
+   90.0
+  ],
+  "mats": [
+   "Fabric_Chair_Seat",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 1.18
+ },
+ "kitchen-counter": {
+  "slug": "kitchen-counter",
+  "title": "Kitchen Counter",
+  "col": "KitchenCounter",
+  "boxes": 21,
+  "tris": 252,
+  "faces": 126,
+  "verts": 168,
+  "dims": [
+   244.0,
+   64.0,
+   135.0
+  ],
+  "mats": [
+   "Cabinet_Yellow",
+   "Granite_Black",
+   "Laminate_White",
+   "Metal_Brushed_Steel",
+   "Metal_Dark",
+   "Plastic_Black"
+  ],
+  "glb_mb": 1.38
+ },
+ "refrigerator": {
+  "slug": "refrigerator",
+  "title": "Refrigerator",
+  "col": "Refrigerator",
+  "boxes": 10,
+  "tris": 120,
+  "faces": 60,
+  "verts": 80,
+  "dims": [
+   70.0,
+   75.0,
+   180.0
+  ],
+  "mats": [
+   "Fridge_Steel",
+   "Metal_Dark",
+   "Plastic_Black"
+  ],
+  "glb_mb": 0.29
+ },
+ "microwave": {
+  "slug": "microwave",
+  "title": "Microwave",
+  "col": "Microwave",
+  "boxes": 13,
+  "tris": 156,
+  "faces": 78,
+  "verts": 104,
+  "dims": [
+   50.0,
+   39.0,
+   28.0
+  ],
+  "mats": [
+   "Glass_Dark",
+   "Laminate_White",
+   "Laptop_Screen",
+   "Metal_Brushed_Steel",
+   "Metal_Dark",
+   "Plastic_Black"
+  ],
+  "glb_mb": 0.42
+ },
+ "wall-cabinet": {
+  "slug": "wall-cabinet",
+  "title": "Wall Cabinet",
+  "col": "WallCabinet",
+  "boxes": 9,
+  "tris": 108,
+  "faces": 54,
+  "verts": 72,
+  "dims": [
+   240.0,
+   37.0,
+   70.0
+  ],
+  "mats": [
+   "Cabinet_Yellow",
+   "Laminate_White",
+   "Metal_Brushed_Steel"
+  ],
+  "glb_mb": 0.35
+ },
+ "washing-machine": {
+  "slug": "washing-machine",
+  "title": "Washing Machine",
+  "col": "WashingMachine",
+  "boxes": 6,
+  "tris": 72,
+  "faces": 36,
+  "verts": 48,
+  "dims": [
+   60.0,
+   63.7,
+   85.0
+  ],
+  "mats": [
+   "Glass_Dark",
+   "Laminate_White",
+   "Laptop_Screen",
+   "Metal_Brushed_Steel",
+   "Plastic_Black"
+  ],
+  "glb_mb": 0.34
+ },
+ "toilet": {
+  "slug": "toilet",
+  "title": "Toilet",
+  "col": "Toilet",
+  "boxes": 5,
+  "tris": 60,
+  "faces": 30,
+  "verts": 40,
+  "dims": [
+   38.0,
+   62.0,
+   79.5
+  ],
+  "mats": [
+   "Ceramic_White",
+   "Metal_Brushed_Steel"
+  ],
+  "glb_mb": 0.21
+ },
+ "vanity": {
+  "slug": "vanity",
+  "title": "Bathroom Vanity",
+  "col": "Vanity",
+  "boxes": 14,
+  "tris": 168,
+  "faces": 84,
+  "verts": 112,
+  "dims": [
+   64.0,
+   48.5,
+   187.0
+  ],
+  "mats": [
+   "Ceramic_White",
+   "Glass_Dark",
+   "Marble_White",
+   "Metal_Brushed_Steel",
+   "Metal_Dark",
+   "Mirror_Glass",
+   "Oak_Wood",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 1.11
+ },
+ "shower": {
+  "slug": "shower",
+  "title": "Shower",
+  "col": "Shower",
+  "boxes": 9,
+  "tris": 108,
+  "faces": 54,
+  "verts": 72,
+  "dims": [
+   90.0,
+   90.0,
+   198.0
+  ],
+  "mats": [
+   "Ceramic_White",
+   "Glass_Clear",
+   "Metal_Brushed_Steel"
+  ],
+  "glb_mb": 0.22
+ },
+ "shoe-rack": {
+  "slug": "shoe-rack",
+  "title": "Shoe Rack",
+  "col": "ShoeRack",
+  "boxes": 9,
+  "tris": 108,
+  "faces": 54,
+  "verts": 72,
+  "dims": [
+   80.0,
+   30.0,
+   50.0
+  ],
+  "mats": [
+   "Oak_Wood",
+   "Shoe_Fabric_Red",
+   "Shoe_Leather_Black"
+  ],
+  "glb_mb": 1.94
+ },
+ "door": {
+  "slug": "door",
+  "title": "Door",
+  "col": "Door",
+  "boxes": 3,
+  "tris": 36,
+  "faces": 18,
+  "verts": 24,
+  "dims": [
+   82.0,
+   5.0,
+   204.0
+  ],
+  "mats": [
+   "Metal_Brushed_Steel",
+   "Oak_Wood"
+  ],
+  "glb_mb": 0.39
+ },
+ "wall-clock": {
+  "slug": "wall-clock",
+  "title": "Wall Clock",
+  "col": "WallClock",
+  "boxes": 8,
+  "tris": 96,
+  "faces": 48,
+  "verts": 64,
+  "dims": [
+   32.0,
+   5.9,
+   32.0
+  ],
+  "mats": [
+   "Ceramic_White",
+   "Plastic_Black"
+  ],
+  "glb_mb": 0.27
+ },
+ "wall-art": {
+  "slug": "wall-art",
+  "title": "Wall Art",
+  "col": "WallArt",
+  "boxes": 3,
+  "tris": 36,
+  "faces": 18,
+  "verts": 24,
+  "dims": [
+   60.0,
+   3.6,
+   80.0
+  ],
+  "mats": [
+   "Art_Mat_White",
+   "Art_Print",
+   "Oak_Wood"
+  ],
+  "glb_mb": 1.37
+ },
+ "household-house": {
+  "slug": "household-house",
+  "title": "Furnished 3BHK House",
+  "boxes": 781,
+  "tris": 9372,
+  "faces": 4686,
+  "verts": 6248,
+  "dims": [
+   1540.0,
+   1060.0,
+   306.0
+  ],
+  "mats": [
+   "Art_Mat_White",
+   "Art_Print",
+   "Book_Color_1",
+   "Book_Color_2",
+   "Book_Color_3",
+   "Book_Color_4",
+   "Book_Color_5",
+   "Book_Color_6",
+   "Cabinet_Yellow",
+   "Ceramic_White",
+   "Fabric_Bed_Linen",
+   "Fabric_Blanket_Teal",
+   "Fabric_Chair_Seat",
+   "Fabric_Cream",
+   "Fabric_Curtain",
+   "Fabric_Grey",
+   "Fabric_Mustard",
+   "Floor_Grey_Planks",
+   "Floor_LightOak_Planks",
+   "Floor_Oak_Planks",
+   "Floor_Terracotta_Tile",
+   "Floor_Tile_Blue",
+   "Floor_Tile_Teal",
+   "Floor_Tile_White",
+   "Floor_Walnut_Planks",
+   "Fridge_Steel",
+   "Glass_Clear",
+   "Glass_Dark",
+   "Granite_Black",
+   "House_Base_Concrete",
+   "Laminate_White",
+   "Lamp_Metal_Black",
+   "Lamp_Shade_Warm",
+   "Laptop_Screen",
+   "Leaf_Green",
+   "Leather_Brown",
+   "Marble_White",
+   "Metal_Brushed_Steel",
+   "Metal_Dark",
+   "Mirror_Glass",
+   "Oak_Wood",
+   "Paint_Blue_Grey",
+   "Paint_Mint",
+   "Paint_Rustic_Brown",
+   "Paint_Teal",
+   "Paint_Terracotta",
+   "Paint_Yellow",
+   "Plastic_Black",
+   "Rug_Border",
+   "Rug_Main",
+   "Shelf_Back_Panel",
+   "Shelf_Wood",
+   "Shoe_Fabric_Red",
+   "Shoe_Leather_Black",
+   "Sofa_Cushion",
+   "Sofa_Fabric",
+   "Sofa_Legs_Wood",
+   "Soil_Dark",
+   "TV_Screen",
+   "Table_Legs_Black",
+   "Table_Wood_Top",
+   "Wall_Tile_Blue",
+   "Wall_Tile_Teal",
+   "Wall_White",
+   "Walnut_Wood"
+  ],
+  "glb_mb": 23.31
+ }
+}

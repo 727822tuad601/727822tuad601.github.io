@@ -1,0 +1,36 @@
+{
+ "tris": 652,
+ "faces": 316,
+ "verts": 428,
+ "bones": 17,
+ "dims": [
+  82.2,
+  91.5,
+  184.5
+ ],
+ "mats": [
+  "Char_Skin",
+  "Char_Clothing_Shirt",
+  "Char_Clothing_Pants",
+  "Char_Hair",
+  "Char_Hat_Straw",
+  "Char_Shoes",
+  "Char_Eyes",
+  "Char_Pupils",
+  "Char_Flower_Petals",
+  "Char_Flower_Center"
+ ],
+ "cols": {
+  "Char_Skin": "#ddab88",
+  "Char_Clothing_Shirt": "#ef811e",
+  "Char_Clothing_Pants": "#4a6f81",
+  "Char_Hair": "#b94a26",
+  "Char_Hat_Straw": "#e5bd64",
+  "Char_Shoes": "#e7b23f",
+  "Char_Eyes": "#f3f3f1",
+  "Char_Pupils": "#262020",
+  "Char_Flower_Petals": "#f3f3ed",
+  "Char_Flower_Center": "#f3cb26"
+ },
+ "glb_mb": 0.11
+}

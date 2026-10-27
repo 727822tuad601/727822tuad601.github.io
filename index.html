@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akash G — Game Designer &amp; 3D Artist | Portfolio</title>
+  <meta name="description" content="Portfolio of Akash G — game designer, 3D modeler and animator. Interactive 3D models, games, animation and video work.">
+  <meta name="theme-color" content="#0b0a0c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Akash G — Game Designer & 3D Artist">
+  <meta property="og:description" content="Step into my studio world: interactive 3D models, games, animation and video work.">
+  <meta property="og:image" content="assets/images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Three.js (pinned version) — used for the 3D world and model viewer -->
+  <script type="importmap">
+  {
+    "imports": { 
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('ag-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__top mono">AKASH.G — LEVEL SELECT</div>
+    <div class="loader__panel loader__panel--a"></div>
+    <div class="loader__panel loader__panel--b"></div>
+    <div class="loader__center">
+      <div class="loader__num disp"><span id="loader-num">0</span><em>%</em></div>
+      <div class="loader__text mono" id="loader-text">Loading level 00</div>
+      <div class="loader__bar"><i id="loader-bar"></i></div>
+    </div>
+    <ul class="loader__log mono" id="loader-log"></ul>
+    <div class="loader__tip mono">Tip: drag any exhibit to rotate it</div>
+  </div>
+
+  <!-- CURSOR + GRAIN + TRANSITION -->
+  <div class="cursor" aria-hidden="true"><div class="cursor__ring"><span class="cursor__label mono"></span></div><div class="cursor__dot"></div></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="wipe" aria-hidden="true"><div class="wipe__label disp"></div></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="#home" class="logo" data-goto="home" data-magnetic>AKASH<b>.</b>G</a>
+    <nav class="nav mono" id="nav" aria-label="Main"></nav>
+    <div class="header__tools">
+      <button class="pill mono" id="theme-btn" aria-label="Toggle light / dark theme" data-magnetic><i class="fa-solid fa-circle-half-stroke"></i><span>Dark</span></button>
+      <a class="pill pill--acc mono" href="#contact" data-goto="contact" data-magnetic>Contact <span aria-hidden="true">↗</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="rail mono" id="rail" aria-hidden="true"></div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Intro">
+      <div class="hero__sticky">
+        <div class="hero__fallback" id="hero-fallback">
+          <svg class="dune dune--1" data-speed="0.15" viewBox="0 0 1440 520" preserveAspectRatio="none"><path d="M0 210 C 200 120 360 170 520 140 S 860 60 1040 120 S 1320 150 1440 100 V520 H0Z"/></svg>
+          <svg class="dune dune--2" data-speed="0.3" viewBox="0 0 1440 520" preserveAspectRatio="none"><path d="M0 300 C 240 220 420 290 640 250 S 1000 190 1180 250 S 1380 260 1440 230 V520 H0Z"/></svg>
+          <svg class="dune dune--3" data-speed="0.5" viewBox="0 0 1440 520" preserveAspectRatio="none"><path d="M0 420 C 300 360 560 450 860 400 S 1260 360 1440 390 V520 H0Z"/></svg>
+          <div class="hero__exhibit" data-speed="-0.2"><div class="hero__ring"></div><img id="hero-fallback-img" alt=""></div>
+        </div>
+        <div class="hero__canvas" id="hero-canvas" data-cursor="drag"></div>
+
+        <div class="hero__hud hero__hud--cam mono" id="hud-cam">CAM 01 · X 0.00 · Y 0.00 · Z 0.00</div>
+        <div class="hero__hud hero__hud--live mono" id="hud-live"></div>
+        <div class="hero__hud hero__hud--exhibit mono" id="hud-exhibit"></div>
+
+        <div class="hero__content" id="hero-content">
+          <h1 class="hero__title disp"><span class="hero__line" id="hero-name">AKASH</span><span class="hero__line hero__line--o" id="hero-initial">G.</span></h1>
+          <p class="hero__role mono">I'm a <b id="typed"></b><u aria-hidden="true"></u></p>
+          <p class="hero__tagline" id="hero-tagline"></p>
+          <div class="hero__cta">
+            <a href="#models" class="btn mono" data-goto="models" data-magnetic>Enter the world <span aria-hidden="true">↓</span></a>
+            <a href="#contact" class="btn btn--ghost mono" data-goto="contact" data-magnetic>Hire me</a>
+          </div>
+          <div class="hero__socials" id="hero-socials"></div>
+        </div>
+        <div class="hero__scroll mono" aria-hidden="true">Scroll<i></i></div>
+      </div>
+    </section>
+
+    <!-- SECTIONS (filled from data/*.js) -->
+    <section class="sec" id="models"><div class="sec__head" data-head="models"></div><div class="models-grid" id="models-grid"></div></section>
+    <section class="sec" id="games"><div class="sec__head" data-head="games"></div><div class="games-list" id="games-list"></div></section>
+    <section class="sec sec--reels" id="reels">
+      <div class="reels__pin">
+        <div class="sec__head" data-head="reels"></div>
+        <div class="filters mono" id="reel-filters" role="tablist" aria-label="Video categories"></div>
+        <div class="reels__viewport" id="reels-viewport"><div class="reels__track" id="reels-track"></div></div>
+      </div>
+    </section>
+    <section class="sec" id="upcoming"><div class="sec__head" data-head="upcoming"></div><div class="up-grid" id="up-grid"></div></section>
+    <section class="sec" id="about"><div class="sec__head" data-head="about"></div><div class="about" id="about-body"></div></section>
+    <section class="sec sec--contact" id="contact"><div class="contact" id="contact-body"></div></section>
+  </main>
+
+  <footer class="footer mono" id="footer"></footer>
+
+  <!-- MODAL (project detail views) -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" id="modal-panel">
+      <button class="modal__close" id="modal-close" aria-label="Close (Esc)" data-cursor="close"><span></span><span></span></button>
+      <div class="modal__body" id="modal-body" data-native-scroll></div>
+    </div>
+  </div>
+
+  <noscript><p class="noscript">This portfolio needs JavaScript turned on to show its projects.</p></noscript>
+
+  <!-- CONTENT (edit these files to update the site) -->
+  <script src="data/site.js"></script>
+  <script src="data/profile.js"></script>
+  <script src="data/models.js"></script>
+  <script src="data/household.js"></script>
+  <script src="data/games.js"></script>
+  <script src="data/videos.js"></script>
+  <script src="data/projects.js"></script>
+
+  <!-- ENGINE -->
+  <script src="js/utils.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/three-loader.js"></script>
+  <script src="js/model-viewer.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
